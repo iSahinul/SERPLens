@@ -62,6 +62,10 @@ SERPLens reads GSC with **your own** Google service-account key — nothing is s
 3. In [Search Console](https://search.google.com/search-console), open your property → Settings → Users and permissions → add the service account's email as a user (Full or Restricted access both work).
 4. Run the quick start with your property exactly as GSC shows it — `https://example.com/` for a URL-prefix property, `sc-domain:example.com` for a domain property.
 
+## Use it as an agent skill
+
+This repo ships a `SKILL.md` (in the `skill/` folder) in the open Agent Skills format — the same file works in Claude, ChatGPT and Codex. Install the skill and your AI assistant can run scans for you and explain the verdicts: copy the `skill/` folder into your agent's skills directory (for example `~/.claude/skills/serplens/` or `~/.agents/skills/serplens/`), keeping `SKILL.md` inside it.
+
 ## Roadmap
 
 - **v0.1** — `prompt-scan` (this release)
