@@ -41,6 +41,8 @@ You get a summary in the terminal and a dated markdown report like:
 | WATCH | what is the best way to descale kettles | 40 | 0 | 2.0 | /guides/descale-kettle |
 | CONTENT GAP | why does my washing machine smell so bad lately | 10 | 0 | 25.0 | /laundry/washer-smells |
 
+See a full report before connecting anything: [examples/sample-output.md](examples/sample-output.md) (generated from synthetic data).
+
 ## How it works
 
 Long queries (8+ words) in Search Console are usually real questions — typed or spoken in full sentences. Those are exactly the queries AI search engines answer. If you already appear for one but earn few clicks, the cheapest fix in SEO is often a 40–60 word direct answer near the top of the page that already ranks.
