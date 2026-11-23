@@ -103,7 +103,7 @@ Not in v0.1 — the service-account flow is the simplest to run unattended. OAut
 
 SERPLens comes out of running a small system of niche content sites and doing the same scan by hand every month as part of an SEO audit. The scan earned its keep — the toolkit is that system, one tool at a time, made public.
 
-**Sahinul Islam Laskar** — SEO content writer & niche site operator · [github.com/iSahinul](https://github.com/iSahinul)
+**Sahinul Islam Laskar** — SEO content writer & niche site operator · [GitHub](https://github.com/iSahinul) · [LinkedIn](https://www.linkedin.com/in/isahinul/) · [X (@iSahinul)](https://x.com/iSahinul)
 
 ---
 
