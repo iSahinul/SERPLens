@@ -8,6 +8,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-151515?style=for-the-badge" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/python-3.10%2B-151515?style=for-the-badge" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/cost-free-151515?style=for-the-badge" alt="Free">
+  <img src="https://img.shields.io/badge/agent--ready-Claude%20%C2%B7%20ChatGPT%20%C2%B7%20Codex-151515?style=for-the-badge" alt="Agent-ready: works in Claude, ChatGPT and Codex">
 </p>
 
 <p align="center">
@@ -64,6 +65,18 @@ SERPLens reads GSC with **your own** Google service-account key — nothing is s
 3. In [Search Console](https://search.google.com/search-console), open your property → Settings → Users and permissions → add the service account's email as a user (Full or Restricted access both work).
 4. Run the quick start with your property exactly as GSC shows it — `https://example.com/` for a URL-prefix property, `sc-domain:example.com` for a domain property.
 
+## Give it to your AI
+
+Paste this into Claude, ChatGPT or Codex and let your assistant do the setup:
+
+```text
+Set up SERPLens from this repo for my site. Read skill/SKILL.md first.
+Help me create a Google Cloud service account, save the key OUTSIDE the
+repo, then run a prompt scan for the last 28 days and explain the EDIT,
+WATCH and GAP verdicts in plain words. Never paste the key's contents
+anywhere, and never commit it.
+```
+
 ## Use it as an agent skill
 
 This repo ships a `SKILL.md` (in the `skill/` folder) in the open Agent Skills format — the same file works in Claude, ChatGPT and Codex. Install the skill and your AI assistant can run scans for you and explain the verdicts: copy the `skill/` folder into your agent's skills directory (for example `~/.claude/skills/serplens/` or `~/.agents/skills/serplens/`), keeping `SKILL.md` inside it.
@@ -100,6 +113,10 @@ Short queries are keywords; 8+ word queries are almost always full questions —
 
 Not in v0.1 — the service-account flow is the simplest to run unattended. OAuth support is a fair feature request; open an issue.
 </details>
+
+## What has been tested
+
+The scan logic is covered by unit tests and was run end-to-end on synthetic Search Console data (see `examples/sample-output.md`). A live run needs your own service-account key, so the first live verification happens on your machine, against your property. The verdict thresholds themselves come from a production SEO audit system where this scan runs every month.
 
 ## About the creator
 
