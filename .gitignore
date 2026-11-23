@@ -1,0 +1,11 @@
+# Credentials — NEVER commit your Google service-account key
+*credentials*.json
+*service-account*.json
+*.key
+
+# Generated reports
+serplens-*.md
+
+__pycache__/
+*.pyc
+.venv/

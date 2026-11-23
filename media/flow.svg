@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="How SERPLens works: Search Console data flows into SERPLens, which writes a triage report">
+  <rect width="1200" height="300" fill="#f7f5ef"/>
+  <g>
+    <rect x="40" y="70" width="320" height="160" rx="14" fill="#ffffff" stroke="#d8d2c2" stroke-width="2"/>
+    <text x="70" y="118" font-family="Georgia, serif" font-size="25" font-weight="bold" fill="#22201c">Search Console</text>
+    <text x="70" y="152" font-family="monospace" font-size="17" fill="#55534c">your property, last 28 days</text>
+    <text x="70" y="180" font-family="monospace" font-size="17" fill="#55534c">queries + pages, via the API</text>
+    <text x="70" y="208" font-family="monospace" font-size="17" fill="#55534c">your own service-account key</text>
+  </g>
+  <text x="378" y="162" font-family="Georgia, serif" font-size="38" fill="#8a8578">→</text>
+  <g>
+    <rect x="440" y="70" width="320" height="160" rx="14" fill="#101418"/>
+    <text x="470" y="118" font-family="Georgia, serif" font-size="25" font-weight="bold" fill="#f2f5f8">SERPLens</text>
+    <text x="470" y="152" font-family="monospace" font-size="17" fill="#c3ccd6">finds 8+ word questions</text>
+    <text x="470" y="180" font-family="monospace" font-size="17" fill="#c3ccd6">impression-weighted position</text>
+    <text x="470" y="208" font-family="monospace" font-size="17" fill="#c3ccd6">judges every query</text>
+  </g>
+  <text x="778" y="162" font-family="Georgia, serif" font-size="38" fill="#8a8578">→</text>
+  <g>
+    <rect x="840" y="70" width="320" height="160" rx="14" fill="#ffffff" stroke="#d8d2c2" stroke-width="2"/>
+    <text x="870" y="118" font-family="Georgia, serif" font-size="25" font-weight="bold" fill="#22201c">Triage report</text>
+    <text x="870" y="154" font-family="monospace" font-size="17" fill="#1d7a3a">EDIT CANDIDATE — answer it</text>
+    <text x="870" y="182" font-family="monospace" font-size="17" fill="#a86e00">WATCH — you are the answer</text>
+    <text x="870" y="210" font-family="monospace" font-size="17" fill="#55534c">CONTENT GAP — a topic call</text>
+  </g>
+</svg>
