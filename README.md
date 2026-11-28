@@ -8,7 +8,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-151515?style=for-the-badge" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/python-3.10%2B-151515?style=for-the-badge" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/cost-free-151515?style=for-the-badge" alt="Free">
-  <img src="https://img.shields.io/badge/agent--ready-Claude%20%C2%B7%20ChatGPT%20%C2%B7%20Codex-151515?style=for-the-badge" alt="Agent-ready: works in Claude, ChatGPT and Codex">
+  <img src="https://img.shields.io/badge/agent--ready-Claude%20%C2%B7%20Codex%20%C2%B7%20ChatGPT%20%C2%B7%20Copilot-151515?style=for-the-badge" alt="Agent-ready: works in Claude, Codex, ChatGPT and Copilot">
 </p>
 
 <p align="center">
@@ -67,10 +67,10 @@ SERPLens reads GSC with **your own** Google service-account key — nothing is s
 
 ## Give it to your AI
 
-Paste this into Claude, ChatGPT or Codex and let your assistant do the setup:
+Paste this into Claude, Codex, ChatGPT or Copilot and let your assistant do the setup:
 
 ```text
-Set up SERPLens from this repo for my site. Read skill/SKILL.md first.
+Set up SERPLens from this repo for my site. Read .agents/skills/serplens/SKILL.md first.
 Help me create a Google Cloud service account, save the key OUTSIDE the
 repo, then run a prompt scan for the last 28 days and explain the EDIT,
 WATCH and GAP verdicts in plain words. Never paste the key's contents
@@ -79,7 +79,14 @@ anywhere, and never commit it.
 
 ## Use it as an agent skill
 
-This repo ships a `SKILL.md` (in the `skill/` folder) in the open Agent Skills format — the same file works in Claude, ChatGPT and Codex. Install the skill and your AI assistant can run scans for you and explain the verdicts: copy the `skill/` folder into your agent's skills directory (for example `~/.claude/skills/serplens/` or `~/.agents/skills/serplens/`), keeping `SKILL.md` inside it.
+This repo ships a `SKILL.md` in the open Agent Skills format. There is one canonical copy — [`.agents/skills/serplens/`](.agents/skills/serplens/) — and `.claude/skills/serplens` is a link to it, so every tool installs the same file and there is no second copy to keep in sync.
+
+- **Claude** — in a clone of this repo, Claude Code picks the skill up through the `.claude/skills/` link; nothing to install. To use it in every project, copy `.agents/skills/serplens/` to `~/.claude/skills/serplens/`.
+- **Codex** — reads `.agents/skills/` directly: a clone works as-is, or copy the folder to `~/.agents/skills/serplens/`.
+- **ChatGPT** — upload the `serplens` folder from `.agents/skills/` as a skill, or paste the prompt above with the repo link.
+- **Copilot** — GitHub Copilot reads `.agents/skills/` and `.claude/skills/` in a cloned repo, so a clone works as-is.
+
+Install the skill and your AI assistant can run scans for you and explain the verdicts in plain words.
 
 ## Roadmap
 

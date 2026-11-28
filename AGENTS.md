@@ -6,7 +6,8 @@ key and scans for prompt-like queries, triaged EDIT / WATCH / GAP.
 ## Working in this repo
 - Run tests: `python3 -m unittest discover -s tests`
 - Run a scan: `python3 -m serplens.cli --site <property> --key <path>`
-- The user-facing skill for this project lives in `skill/SKILL.md` —
+- The user-facing skill for this project lives in
+  `.agents/skills/serplens/SKILL.md` (linked from `.claude/skills/serplens`) —
   read it before running scans or explaining verdicts.
 
 ## House rules
